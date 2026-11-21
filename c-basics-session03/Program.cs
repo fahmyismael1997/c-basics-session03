@@ -50,9 +50,18 @@ namespace c_basics_session03
             /*Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, 
              Pages: 464" using the + operator.*/
 
-            string Title = "Clean Code",FullText;
+            //string Title = "Clean Code",FullText;
+            //int pages = 464;
+            //FullText = "Book: " + Title + ',' + "pages: " + pages;
+            //Console.WriteLine(FullText);
+            #endregion
+
+            #region Question 6
+            /*Build the same sentence as above, but using string interpolation ($"..."). */
+
+            string Title = "Clean Code", FullText;
             int pages = 464;
-            FullText = "Book: " + Title + ',' + "pages: " + pages;
+            FullText = $"Book: {Title},pages: {pages}";
             Console.WriteLine(FullText);
             #endregion
         }
