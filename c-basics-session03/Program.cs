@@ -32,18 +32,28 @@ namespace c_basics_session03
             /*Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same 
              object. Print the final result.*/
 
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Book List");
-            sb.Append("-Update");
-            Console.WriteLine(sb);
+            //StringBuilder sb = new StringBuilder();
+            //sb.Append("Book List");
+            //sb.Append("-Update");
+            //Console.WriteLine(sb);
             #endregion
 
             #region Question 4
             /*Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". 
              Print the result.*/
 
-            sb.Replace("Book List", "Library");
-            Console.WriteLine(sb);
+            //sb.Replace("Book List", "Library");
+            //Console.WriteLine(sb);
+            #endregion
+
+            #region Question 5
+            /*Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, 
+             Pages: 464" using the + operator.*/
+
+            string Title = "Clean Code",FullText;
+            int pages = 464;
+            FullText = "Book: " + Title + ',' + "pages: " + pages;
+            Console.WriteLine(FullText);
             #endregion
         }
     }
