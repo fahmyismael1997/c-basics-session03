@@ -151,24 +151,32 @@ namespace c_basics_session03
 
             #region Question 12
             /*Using the same books array, use a while loop to print every book title.*/
-            int counter = 0;
-            while (counter<books.Length)
-            {
-                Console.WriteLine(books[counter]);
-                counter++;
-            }
+            //int counter = 0;
+            //while (counter<books.Length)
+            //{
+            //    Console.WriteLine(books[counter]);
+            //    counter++;
+            //}
             #endregion
 
             #region Question 13
             /*Write a do-while loop that prints "Checking book..." exactly 3 times*/
 
-            int j = 0;
-            do
+            //int j = 0;
+            //do
+            //{
+            //    Console.WriteLine("Checking book...");
+            //    j++;
+            //}
+            //while (j<3);
+            #endregion
+
+            #region Question 14
+            /*Using the same books array, use a foreach loop to print every book title. */
+            foreach (string item in books)
             {
-                Console.WriteLine("Checking book...");
-                j++;
+                Console.WriteLine(item);
             }
-            while (j<3);
             #endregion
         }
     }
