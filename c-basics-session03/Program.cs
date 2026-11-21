@@ -158,6 +158,18 @@ namespace c_basics_session03
                 counter++;
             }
             #endregion
+
+            #region Question 13
+            /*Write a do-while loop that prints "Checking book..." exactly 3 times*/
+
+            int j = 0;
+            do
+            {
+                Console.WriteLine("Checking book...");
+                j++;
+            }
+            while (j<3);
+            #endregion
         }
     }
 }
