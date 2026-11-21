@@ -59,9 +59,19 @@ namespace c_basics_session03
             #region Question 6
             /*Build the same sentence as above, but using string interpolation ($"..."). */
 
+            //string Title = "Clean Code", FullText;
+            //int pages = 464;
+            //FullText = $"Book: {Title},pages: {pages}";
+            //Console.WriteLine(FullText);
+            //#endregion
+            #endregion
+
+            #region Question 7
+            /*Build the same sentence again, but using string.Format().*/
+
             string Title = "Clean Code", FullText;
             int pages = 464;
-            FullText = $"Book: {Title},pages: {pages}";
+            FullText = string.Format("Book: {0},pages: {1}", Title, pages);
             Console.WriteLine(FullText);
             #endregion
         }
