@@ -73,6 +73,7 @@ namespace c_basics_session03
             int pages = 464;
             FullText = string.Format("Book: {0},pages: {1}", Title, pages);
             Console.WriteLine(FullText);
+
             #endregion
         }
     }
