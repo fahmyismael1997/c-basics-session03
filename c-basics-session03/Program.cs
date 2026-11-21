@@ -183,14 +183,29 @@ namespace c_basics_session03
             /*Using the same books array, loop through it and print each title, but stop completely (break) once 
               you reach "Refactoring".*/
 
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "Refactoring")
+            //        break;
+
+            //    Console.WriteLine(books[i]);
+
+
+            //}
+            #endregion
+
+            #region Question 16
+            /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with 
+             continue, don't stop the loop).*/
+
             for (int i = 0; i < books.Length; i++)
             {
-                if (books[i] == "Refactoring")
-                    break;
+                if (books[i] == "The Pragmatic Programmer")
+                    continue;
 
                 Console.WriteLine(books[i]);
-                    
-                
+
+
             }
             #endregion
         }
